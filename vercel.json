@@ -1,8 +1,8 @@
 {
     "version": 2,
     "builds": [
-    {
-          "src": "midbrw/wsgi.py",
+      {
+        "src": "midbrw/wsgi.py",
         "use": "@vercel/python",
         "config": { "maxLambdaSize": "15mb", "runtime": "python3.9" }
       },
@@ -12,9 +12,9 @@
         "config": {
           "distDir": "staticfiles_build"
         }
-    }
-  ],
-      "routes": [
+      }
+    ],
+    "routes": [
       {
         "src": "/static/(.*)",
         "dest": "/static/$1"
@@ -25,3 +25,4 @@
       }
     ]
   }
+  
