@@ -20,7 +20,8 @@ def saveData(request):
         email = request.POST.get('email')
         phone = request.POST.get('phone')
         message = request.POST.get('message')
-        data = keepGreen(fname=fname, lname=lname, email=email, phone=phone, message=message)
+        data = keepGreen(fname=fname, lname=lname, email=email, phone=phone, 
+                         message=message)
         data.save()
         return HttpResponse("DATA SAVED SUCCESSFULLY")
     return render(request, "keepgreen/index.html", contact) 
