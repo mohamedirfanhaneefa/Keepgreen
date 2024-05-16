@@ -1,6 +1,6 @@
 {
- "version": 2,
- "builds": [
+  "version": 2,
+  "builds": [
     {
       "src": "midbrw/wsgi.py",
       "use": "@vercel/python",
